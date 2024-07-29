@@ -2,32 +2,46 @@ import Testimonial from '../fragments/Testimonial'
 
 import Slider from 'react-slick'
 
-export default function Testimonials() {
-  const testimonials = [
-    {
-      title: 'Excelente Cuidado e Carinho!',
-      text: 'Fiquei impressionado com o nível de cuidado e atenção que minha gata recebeu enquanto eu estava viajando. Ela voltou para casa feliz e relaxada. Recomendo fortemente este serviço para todos os donos de gatos!',
-      author: 'João P.',
-      stars: 0,
-    },
-    {
-      title: 'Excelente Cuidado e Carinho!',
-      text: 'Fiquei impressionado com o nível de cuidado e atenção que minha gata recebeu enquanto eu estava viajando. Ela voltou para casa feliz e relaxada. Recomendo fortemente este serviço para todos os donos de gatos!',
-      author: 'João P.',
-      stars: 0,
-    },
-  ]
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    arrows: false,
-  }
+const testimonials = [
+  {
+    title: 'Excelente Cuidado e Carinho!',
+    text: 'Fiquei impressionado com o nível de cuidado e atenção que minha gata recebeu enquanto eu estava viajando. Ela voltou para casa feliz e relaxada. Recomendo fortemente este serviço para todos os donos de gatos!',
+    author: 'João P.',
+    stars: 0,
+  },
+  {
+    title: 'Serviço de Primeira Classe!',
+    text: 'Minha gata é muito exigente, mas ela adorou o tempo que passou aqui. O ambiente é seguro e acolhedor, e os cuidadores são extremamente dedicados. Muito obrigado por cuidar tão bem dela!',
+    author: 'Maria L.',
+  },
+  {
+    title: 'Cuidado Confiável!',
+    text: 'Sempre fico tranquila quando deixo meus gatos com vocês. Sei que estão em boas mãos e recebendo todo o carinho e atenção que precisam. Excelente serviço!',
+    author: 'Ana C.',
+  },
+  {
+    title: 'Amor e Dedicação!',
+    text: 'É evidente que a equipe ama o que faz. Meus gatos receberam cuidados personalizados e muito amor durante minha ausência. Não poderia pedir por um serviço melhor!',
+    author: 'Pedro M.',
+  },
+  {
+    title: 'Ambiente Seguro e Acolhedor!',
+    text: 'Deixar meus gatos com vocês foi a melhor decisão. O ambiente é muito seguro e acolhedor, e os cuidadores são fantásticos. Muito obrigada pelo excelente serviço!',
+    author: 'Carla S.',
+  },
+]
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  arrows: false,
+}
 
+export default function Testimonials() {
   return (
     <div id="feedbacks" className="py-20">
       <div className="  flex flex-col lg:flex-row items-center gap-20 bg-secondary-60 py-32 px-12 overflow-hidden">
