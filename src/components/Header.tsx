@@ -1,9 +1,40 @@
+import React from 'react'
+
+const navLinks = [
+  { label: 'Home', link: '#home' },
+  { label: 'Sobre nós', link: '#about-us' },
+  { label: 'Feedbacks', link: '#feedbacks' },
+]
+
 export default function Header() {
-  const navLinks = [
-    { label: 'Home', link: '#' },
-    { label: 'Sobre nós', link: '#about-us' },
-    { label: 'Feedbacks', link: '#feedbacks' },
-  ]
+  const [activeLink, setActiveLink] = React.useState('#home')
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + window.innerHeight / 2
+
+      navLinks.forEach((navLink) => {
+        const section = document.querySelector(navLink.link) as HTMLElement
+        if (section) {
+          const sectionTop = section.offsetTop
+          const sectionHeight = section.offsetHeight
+          if (
+            scrollPosition >= sectionTop &&
+            scrollPosition < sectionTop + sectionHeight
+          ) {
+            setActiveLink(navLink.link)
+          }
+        }
+      })
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  })
+
   const mobileView = false
   return (
     <nav className=" w-full mx-auto fixed top-0 z-30 bg-neutral-90">
@@ -20,7 +51,11 @@ export default function Header() {
               <div key={index} className="relative">
                 <a
                   href={navLink.link}
-                  className="text-sm font-semibold leading-6 text-gray-900 active:text-red-700"
+                  className={`text-sm font-semibold leading-6 ${
+                    activeLink === navLink.link
+                      ? 'border-b-2 border-b-primary-60'
+                      : ''
+                  }`}
                 >
                   {navLink.label}
                 </a>
