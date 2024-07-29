@@ -44,7 +44,7 @@ const settings = {
 export default function Testimonials() {
   return (
     <div id="feedbacks" className="py-20">
-      <div className="  flex flex-col lg:flex-row items-center gap-20 bg-secondary-60 py-32 px-12 overflow-hidden">
+      <div className="  flex flex-col lg:flex-row items-center gap-20 bg-secondary-60 py-32 md:px-12 px-4 overflow-hidden">
         <div className="relative lg:w-2/5 w-full text-neutral-98 ">
           <h2 className="font-bold text-4xl ">O Que Nossos Clientes Dizem</h2>
           <p className="text-lg leading-8 pt-4 ">

@@ -13,7 +13,7 @@ const Newsletter = () => {
     }, 4000)
   }
   return (
-    <div className="relative px-16 py-32 lg:w-3/5 flex flex-col mx-auto">
+    <div className="relative px-4 py-32 lg:w-3/5 w-11/12 flex flex-col mx-auto">
       <div className="flex flex-col items-center">
         <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">
           Se inscreva na Newsletter & receba Cat.care News
@@ -39,7 +39,7 @@ const Newsletter = () => {
         />
         <button
           type="submit"
-          className="rounded-3xl bg-primary px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-primary-30"
+          className="rounded-3xl bg-primary px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-primary-30"
         >
           Inscrever-me
         </button>
@@ -47,15 +47,15 @@ const Newsletter = () => {
 
       {showToast && (
         <>
-          <Toast text="Inscrição bem-sucedida!" />{' '}
-          <div className="w-1/2 absolute top-0 right-0">
-            <Confetti
-              mode="boom"
-              particleCount={50}
-              deg={220}
-              colors={['#286956', '#5D9D87']}
-            />
-          </div>
+          <Toast text="Inscrição bem-sucedida!" />
+          <Confetti
+            mode="boom"
+            particleCount={50}
+            deg={190}
+            x={0.9}
+            y={0.3}
+            colors={['#286956', '#5D9D87']}
+          />
         </>
       )}
     </div>

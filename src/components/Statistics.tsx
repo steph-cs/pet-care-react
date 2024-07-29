@@ -6,31 +6,32 @@ import {
   ShieldCheckIcon,
 } from '@heroicons/react/24/outline'
 
+const statistics = [
+  {
+    icon: <TrophyIcon />,
+    number: '20+',
+    title: 'Premiações',
+  },
+  {
+    icon: <GlobeAmericasIcon />,
+    number: '8+',
+    title: 'Estados',
+  },
+  {
+    icon: <UserGroupIcon />,
+    number: '10K',
+    title: 'Clientes',
+  },
+  {
+    icon: <ShieldCheckIcon />,
+    number: '99%',
+    title: 'Proteção',
+  },
+]
+
 export default function Statistics() {
-  const statistics = [
-    {
-      icon: <TrophyIcon />,
-      number: '20+',
-      title: 'Premiações',
-    },
-    {
-      icon: <GlobeAmericasIcon />,
-      number: '8+',
-      title: 'Estados',
-    },
-    {
-      icon: <UserGroupIcon />,
-      number: '10K',
-      title: 'Clientes',
-    },
-    {
-      icon: <ShieldCheckIcon />,
-      number: '99%',
-      title: 'Proteção',
-    },
-  ]
   return (
-    <div className="bg-neutral-95 rounded-3xl w-4/5 px-20 py-14  mx-auto ">
+    <div className="bg-neutral-95 rounded-3xl md:w-4/5 w-11/12 md:px-20 px-8 py-14  mx-auto ">
       <h2 className="text-4xl font-bold mb-8">
         Por Que Escolher Nossos Serviços?
       </h2>

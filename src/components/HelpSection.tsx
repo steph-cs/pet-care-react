@@ -19,7 +19,7 @@ export default function HelpSection() {
 
       <div className="flex flex-col items-center ">
         <h2 className="text-lg text-gray-700">Como podemos ajudar?</h2>
-        <h3 className="text-3xl font-bold text-black">
+        <h3 className="text-3xl font-bold text-black text-center">
           Durante suas férias ou no trabalho.
         </h3>
       </div>
