@@ -1,4 +1,3 @@
-import React from 'react'
 import StatisticContainer from '../fragments/StatisticContainer'
 import {
   UserGroupIcon,

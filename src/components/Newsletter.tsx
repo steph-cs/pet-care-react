@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Newsletter = () => {
   return (
     <div className="px-16 py-32 lg:w-3/5 flex flex-col mx-auto">

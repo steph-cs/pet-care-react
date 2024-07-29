@@ -1,4 +1,3 @@
-import React from 'react'
 import Testimonial from '../fragments/Testimonial'
 
 import Slider from 'react-slick'
