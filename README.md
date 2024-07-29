@@ -1,30 +1,32 @@
-# React + TypeScript + Vite
+# 🐈 Cat.Care
+## Love & Care For Your Cats
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Access at: [https://pet-care-react-scs.vercel.app/](https://pet-care-react-scs.vercel.app/)
 
-Currently, two official plugins are available:
+**Cat.Care disponibiliza serviços de pet care para gatos. A aplicação React desenvolvida é uma Landing Page da Cat.Care.**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Este projeto tem como objetivo praticar o uso do React, criando aplicações e componentes.**
 
-## Expanding the ESLint configuration
+## 🔨 Project Features
+- Landing page com informações sobre os serviços de pet care para gatos.
+- Animações de confetes para celebração de ações dos usuários.
+- Slider de depoimentos dos clientes satisfeitos.
+- Formulário de inscrição para newsletter com toast de confirmação.
+- Menu de navegação com links que mudam de cor conforme o usuário navega pelas seções.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🧩 Sections
+- **Header**: Menu de navegação.
+- **Home**: Introdução à Cat.Care e chamada para agendamento de serviço.
+- **Statistics**: Números que mostram por que escolher os serviços da Cat.Care.
+- **Sobre nós**: Descrição da missão e visão da Cat.Care.
+- **Feedback**: Depoimentos dos clientes.
+- **Newsletter**: Formulário para inscrição na newsletter com toast de confirmação de inscrição.
+- **Footer**: Horário de funcionamento, redes sociais, endereço e links úteis.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## ✔️ Technologies Used
+- `React`
+- `TypeScript`
+- `Vite`
+- `Tailwind CSS`
+- `React-confetti-boom`
+- `Slick-carousel`
