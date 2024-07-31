@@ -6,6 +6,8 @@
 **Cat.Care disponibiliza serviços de pet care para gatos. A aplicação React desenvolvida é uma Landing Page da Cat.Care.**
 
 **Este projeto tem como objetivo praticar o uso do React, criando aplicações e componentes.**
+<img src="https://github.com/user-attachments/assets/0175ebb8-3557-42e4-b6db-f3c0b40eaefb"  width='100%'/>
+
 
 ## 🔨 Project Features
 - Landing page com informações sobre os serviços de pet care para gatos.
